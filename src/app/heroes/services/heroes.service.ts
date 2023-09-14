@@ -44,7 +44,7 @@ export class HeroeService {
 
   }
 
-  updateHeroById( id: string ): Observable<boolean>{
+  deleteHeroById( id: string ): Observable<boolean>{
 
     return this.http.delete(`${this.baseUrl}/heroes/${id}`)
     .pipe(
