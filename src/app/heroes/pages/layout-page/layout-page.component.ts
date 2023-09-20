@@ -24,7 +24,7 @@ export class LayoutPageComponent {
   ]
 
   onLogout():void{
-    this.service.logout;
+    this.service.logout();
     this.router.navigate(['/auth/login'])
   }
 
